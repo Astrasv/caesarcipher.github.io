@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Caesar Cipher</title>
+</head>
+<body>
+    <h1 class="mainhead">Caesar Cipher</h1>
+    <section class="main">
+        <div class="input-output">
+            <h3 class="label">Ciphering Shift Value </h3>
+            <input type="number" max="25" min="1" id="shift" class="fancy-number-input" value="1">
+            <textarea id="input_text" placeholder="Enter your input text"></textarea>
+            <a onclick="cipher()" href="#" id="submit">Submit</a>
+            <textarea id="ciphered" placeholder="Your ciphered text will be displayed here"></textarea>
+        </div>
+
+        <div class="input-output-decrip">
+            <h3 class="label">Deciphering Shift Value</h3>
+            <input type="number" max="25" min="1" id="shift" class="fancy-number-input" value="1">
+            <textarea id="input_text-decrip" placeholder="Enter your input text"></textarea>
+            <a onclick="decipher()" href="#" id="submit">Submit</a>
+            <textarea id="deciphered" placeholder="Your ciphered text will be displayed here"></textarea>
+        </div>
+
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
